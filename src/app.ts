@@ -11,7 +11,7 @@
 //nice way: import everything where it is used
 
 
-namespace App {
+namespace App { //g
 
 new ProjectInput();
 new ProjectList("active");
