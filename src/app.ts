@@ -1,20 +1,7 @@
-/// <reference path="models/drag-and-drop.ts" />
-/// <reference path="models/project.ts" />
-/// <reference path="state/project-state.ts" />
-/// <reference path="util/validation.ts" />
-/// <reference path="decorators/autobind.ts" />
-/// <reference path="components/project-input.ts" />
-/// <reference path="components/project-list.ts" />
-/// <reference path="components/project-input.ts" />
+import { ProjectInput } from "./components/project-input.js";
+import { ProjectList } from './components/project-list.js'
 
-//easy way: use all imports here
-//nice way: import everything where it is used
-
-
-namespace App { //g
 
 new ProjectInput();
 new ProjectList("active");
 new ProjectList("finished");
-
-}
