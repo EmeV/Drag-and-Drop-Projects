@@ -1,11 +1,11 @@
 import { Draggable } from "../models/drag-and-drop.js";
-import { Component } from "./base-components.js";
-import { autobind } from "../decorators/autobind.js";
+import Cmp from "./base-components.js"; //useing export default -> you can git it anothert name, but no name autocompl. possible
+import { autobind as Autobind} from "../decorators/autobind.js";
 import { Project } from "../models/project.js";
 
 // ProjectItem Class
 export class ProjectItem
-  extends Component<HTMLUListElement, HTMLLIElement>
+  extends Cmp<HTMLUListElement, HTMLLIElement>
   implements Draggable
 {
   private project: Project;
@@ -25,7 +25,7 @@ export class ProjectItem
     this.renderContent();
   }
 
-  @autobind
+  @Autobind
   dragStartHandler(event: DragEvent): void {
     //add data we want to transfer
     //how can dataTransfer be null? it can be used in dragEndas well, where we might not have the data anymore
