@@ -1,7 +1,7 @@
-import { Draggable } from "../models/drag-and-drop.js";
-import Cmp from "./base-components.js"; //useing export default -> you can git it anothert name, but no name autocompl. possible
-import { autobind as Autobind} from "../decorators/autobind.js";
-import { Project } from "../models/project.js";
+import { Draggable } from "../models/drag-and-drop";
+import Cmp from "./base-components"; //useing export default -> you can git it anothert name, but no name autocompl. possible
+import { autobind as Autobind} from "../decorators/autobind";
+import { Project } from "../models/project";
 
 // ProjectItem Class
 export class ProjectItem
